@@ -48,7 +48,7 @@ public class NormalGraph {
             queue.removeFirst();
             ArrayList<String> neighbours = g.getOrDefault(cur,new ArrayList<>());
             if(neighbours.isEmpty()){
-                break;
+                continue;
             }
             int size = neighbours.size();
             for(int i = 0;i<size;i++){
